@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Development Learning Plan | Umme Hani Blog</title>
+  <meta
+    name="description"
+    content="My weekly learning plan as a beginner web development student."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Umme Hani Blog</a>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-wrap">
+      <a href="index.html#articles" class="back-link">← Back to all posts</a>
+
+      <header class="article-header">
+        <span class="badge">Learning Journey</span>
+        <h1>My Web Development Learning Plan</h1>
+        <p class="article-meta">By Umme Hani • 28 Mar 2026 • 6 min read</p>
+        <p class="article-intro">
+          I am still a beginner, so I created a weekly plan to learn slowly and stay regular.
+          Planning helps me stay focused and improve step by step.
+        </p>
+      </header>
+
+      <article class="article-content">
+        <h2>My weekly routine</h2>
+        <p>
+          I divided my learning into small tasks. Each day I practice one topic and build one short
+          example so I do not forget what I learned.
+        </p>
+
+        <div class="code-block">
+          <div class="code-header">
+            <span>weekly-plan.txt</span>
+            <button class="copy-btn" type="button">Copy</button>
+          </div>
+          <pre><code><span class="token-comment">Monday</span>
+HTML practice + structure
+
+<span class="token-comment">Tuesday</span>
+CSS colors and spacing
+
+<span class="token-comment">Wednesday</span>
+Flexbox and responsive layout
+
+<span class="token-comment">Thursday</span>
+JavaScript basics
+
+<span class="token-comment">Friday</span>
+Mini project and revision</code></pre>
+        </div>
+
+        <h2>Simple JavaScript practice</h2>
+        <p>
+          I am learning basic DOM interaction first, like button click and text update. It helps me
+          understand how JavaScript controls page behavior.
+        </p>
+
+        <div class="code-block">
+          <div class="code-header">
+            <span>practice.js</span>
+            <button class="copy-btn" type="button">Copy</button>
+          </div>
+          <pre><code><span class="token-key">const</span> button = document.querySelector(<span class="token-str">"#planBtn"</span>);
+<span class="token-key">const</span> output = document.querySelector(<span class="token-str">"#statusText"</span>);
+
+button.addEventListener(<span class="token-str">"click"</span>, () =&gt; {
+  output.textContent = <span class="token-str">"Great! Today's plan is completed."</span>;
+});</code></pre>
+        </div>
+
+        <h3>My next goals</h3>
+        <ul>
+          <li>Build one complete responsive website each month.</li>
+          <li>Improve JavaScript basics and DOM skills.</li>
+          <li>Learn simple form validation.</li>
+          <li>Create a stronger student portfolio.</li>
+        </ul>
+
+        <h2>My weekly self-review method</h2>
+        <p>
+          Every weekend I review what I practiced during the week. I write short notes about what I
+          understood well and what still needs more practice.
+        </p>
+        <p>
+          This habit helps me learn faster because I do not forget old topics and I can clearly see
+          my improvement from one week to the next.
+        </p>
+
+        <h2>Motivation for beginners</h2>
+        <p>
+          Learning web development can feel slow in the beginning, but regular small practice gives
+          strong results. My plan is to keep building simple projects and improve one step at a time.
+        </p>
+      </article>
+
+      <section class="related-posts">
+        <h3>Related Posts</h3>
+        <div class="related-links">
+          <a href="post1.html">Building My First Lab Website</a>
+          <a href="post2.html">What I Learned from CSS Layout Practice</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2026 Umme Hani's Blog</p>
+      <div class="social-links">
+        <a href="https://github.com/ummehani-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+      <div class="quick-links"></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

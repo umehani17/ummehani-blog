@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building My First Lab Website | Umme Hani Blog</title>
+  <meta
+    name="description"
+    content="My first complete lab website project using HTML, CSS, and JavaScript."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Umme Hani Blog</a>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-wrap">
+      <a href="index.html#articles" class="back-link">← Back to all posts</a>
+
+      <header class="article-header">
+        <span class="badge">Lab Project</span>
+        <h1>Building My First Lab Website</h1>
+        <p class="article-meta">By Umme Hani • 20 Mar 2026 • 6 min read</p>
+        <p class="article-intro">
+          This was my first full website for university lab submission. I used only HTML, CSS, and
+          small JavaScript. My goal was to keep the page simple, readable, and responsive.
+        </p>
+      </header>
+
+      <article class="article-content">
+        <h2>Project structure I used</h2>
+        <p>
+          I avoided complex setup and created a small folder with clear file names. This helped me
+          stay organized while learning.
+        </p>
+
+        <div class="code-block">
+          <div class="code-header">
+            <span>project-files.txt</span>
+            <button class="copy-btn" type="button">Copy</button>
+          </div>
+          <pre><code><span class="token-comment"># Beginner website structure</span>
+index.html
+style.css
+script.js
+post1.html
+post2.html
+post3.html</code></pre>
+        </div>
+
+        <h2>How I started the layout</h2>
+        <p>
+          I first built the basic HTML sections: header, hero, post cards, and footer. After this,
+          I added CSS to improve colors and spacing.
+        </p>
+
+        <div class="code-block">
+          <div class="code-header">
+            <span>index.html (basic layout)</span>
+            <button class="copy-btn" type="button">Copy</button>
+          </div>
+          <pre><code><span class="token-key">&lt;header&gt;</span>...<span class="token-key">&lt;/header&gt;</span>
+<span class="token-key">&lt;main&gt;</span>
+  <span class="token-key">&lt;section&gt;</span>Hero content<span class="token-key">&lt;/section&gt;</span>
+  <span class="token-key">&lt;section&gt;</span>Blog cards<span class="token-key">&lt;/section&gt;</span>
+<span class="token-key">&lt;/main&gt;</span>
+<span class="token-key">&lt;footer&gt;</span>Footer links<span class="token-key">&lt;/footer&gt;</span></code></pre>
+        </div>
+
+        <h3>What I learned</h3>
+        <ul>
+          <li>Simple structure is easier to debug.</li>
+          <li>Good spacing makes a design look cleaner.</li>
+          <li>Mobile testing is important even for small projects.</li>
+          <li>Small JavaScript features can improve user experience.</li>
+        </ul>
+
+        <h2>Problems I faced and how I solved them</h2>
+        <p>
+          At first, my sections were not aligned properly and card spacing looked uneven. I solved
+          this by using one container width and consistent padding values in all sections.
+        </p>
+        <p>
+          I also checked the website on phone view and found text was too large in some places.
+          After adding responsive CSS media queries, the page looked much better on small screens.
+        </p>
+
+        <h2>Final result of this lab task</h2>
+        <p>
+          This project helped me understand how to create a full multi-page website without using
+          frameworks. I feel more confident now to build the next project with better structure and
+          cleaner styling.
+        </p>
+      </article>
+
+      <section class="related-posts">
+        <h3>Related Posts</h3>
+        <div class="related-links">
+          <a href="post2.html">What I Learned from CSS Layout Practice</a>
+          <a href="post3.html">My Web Development Learning Plan</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2026 Umme Hani's Blog</p>
+      <div class="social-links">
+        <a href="https://github.com/ummehani-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+      <div class="quick-links"></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

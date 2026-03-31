@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What I Learned from CSS Layout Practice | Umme Hani Blog</title>
+  <meta
+    name="description"
+    content="My beginner notes on CSS layout, flexbox, and spacing."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Umme Hani Blog</a>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-wrap">
+      <a href="index.html#articles" class="back-link">← Back to all posts</a>
+
+      <header class="article-header">
+        <span class="badge">CSS Practice</span>
+        <h1>What I Learned from CSS Layout Practice</h1>
+        <p class="article-meta">By Umme Hani • 25 Mar 2026 • 7 min read</p>
+        <p class="article-intro">
+          In this post I share beginner lessons from CSS practice. I focused on layout, spacing,
+          colors, and making pages look neat without advanced frameworks.
+        </p>
+      </header>
+
+      <article class="article-content">
+        <h2>Using Flexbox for easy alignment</h2>
+        <p>
+          Flexbox made it easy to align cards and navigation links. I used it for row and column
+          layouts instead of trying complex positioning.
+        </p>
+
+        <div class="code-block">
+          <div class="code-header">
+            <span>layout.css (flexbox)</span>
+            <button class="copy-btn" type="button">Copy</button>
+          </div>
+          <pre><code><span class="token-key">.card-row</span> {
+  display: <span class="token-str">flex</span>;
+  gap: <span class="token-type">16px</span>;
+  flex-wrap: <span class="token-str">wrap</span>;
+}
+
+<span class="token-key">.card</span> {
+  flex: <span class="token-type">1 1 280px</span>;
+  background: <span class="token-str">#ffffff</span>;
+  border-radius: <span class="token-type">12px</span>;
+  padding: <span class="token-type">16px</span>;
+}</code></pre>
+        </div>
+
+        <h2>Improving readability with spacing</h2>
+        <p>
+          I learned that text is easier to read with proper line-height and margin. Small spacing
+          changes can make a big visual difference.
+        </p>
+
+        <div class="code-block">
+          <div class="code-header">
+            <span>typography.css</span>
+            <button class="copy-btn" type="button">Copy</button>
+          </div>
+          <pre><code><span class="token-key">body</span> {
+  line-height: <span class="token-type">1.7</span>;
+  color: <span class="token-str">#2a2b3e</span>;
+}
+
+<span class="token-key">h2</span> {
+  margin-top: <span class="token-type">24px</span>;
+  margin-bottom: <span class="token-type">8px</span>;
+}
+
+<span class="token-key">p</span> {
+  margin-bottom: <span class="token-type">14px</span>;
+}</code></pre>
+        </div>
+
+        <h3>My beginner CSS checklist</h3>
+        <ul>
+          <li>Use consistent spacing values.</li>
+          <li>Keep color palette small and clean.</li>
+          <li>Test layout on smaller screens.</li>
+          <li>Avoid too many effects and animations.</li>
+        </ul>
+
+        <h2>How I made the layout responsive</h2>
+        <p>
+          I used media queries to change card layout from three columns to one column on smaller
+          devices. This made the content easier to read on mobile phones.
+        </p>
+        <p>
+          I also reduced image height and font size slightly on small screens so the page feels more
+          balanced and user-friendly.
+        </p>
+
+        <h2>Key lesson from CSS practice</h2>
+        <p>
+          Good design is not always advanced design. For beginner projects, simple colors, readable
+          text, and consistent spacing create a professional result.
+        </p>
+      </article>
+
+      <section class="related-posts">
+        <h3>Related Posts</h3>
+        <div class="related-links">
+          <a href="post1.html">Building My First Lab Website</a>
+          <a href="post3.html">My Web Development Learning Plan</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2026 Umme Hani's Blog</p>
+      <div class="social-links">
+        <a href="https://github.com/ummehani-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+      <div class="quick-links"></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
