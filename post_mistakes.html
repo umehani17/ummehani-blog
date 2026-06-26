@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mistakes I Made and What They Taught Me | Umme Hani Blog</title>
+  <meta name="description" content="Learning from failures in programming and database design. How mistakes became my best teachers." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Umme Hani Blog</a>
+    </div>
+  </header>
+
+  <main>
+    <article class="post-single">
+      <div class="container post-container">
+        <div class="post-header">
+          <span class="badge">Growth Through Failure</span>
+          <h1>Mistakes I Made and What They Taught Me: Failures as Lessons</h1>
+          <div class="post-meta">
+            <span>Posted on April 2026</span>
+            <span>1000+ words</span>
+          </div>
+        </div>
+
+        <div class="post-body">
+
+          <p>Every programmer makes mistakes. The question isn't whether you'll make them, but whether you'll learn from them. Looking back at this semester, I made plenty of mistakes in Programming Fundamentals and Database Systems. Some were silly errors that wasted hours of debugging. Some were conceptual misunderstandings that led me down wrong paths. Some were poor design decisions that had to be refactored later. But each mistake, no matter how frustrating in the moment, taught me something valuable. Dr. Bilal Ahmad emphasized this perspective constantly: mistakes aren't failures; they're data points that help you improve.</p>
+
+          <p>One of my first major mistakes in Programming Fundamentals was not understanding the difference between passing variables by value versus by reference. I wrote a function that was supposed to modify an array, but the changes weren't persisting outside the function. I spent hours debugging, adding print statements everywhere, convinced that my logic was wrong. Finally, Dr. Bilal Ahmad pointed out that I was passing the array by value, not by reference. It was a simple mistake, but the debugging process taught me so much about how memory and function calls work. Now, whenever I write a function that needs to modify data, I immediately think about whether I'm passing references correctly.</p>
+
+          <p>Another mistake that stands out was writing inefficient code in Database Systems. I wrote a query that worked correctly but took minutes to execute on a medium-sized dataset. When Dr. Bilal Ahmad reviewed it, he showed me how adding a simple index could reduce execution time from minutes to milliseconds. The query was functionally correct—it produced the right results—but it was terrible from a performance perspective. I realized that "correct" and "good" aren't synonymous. Correct code that's inefficient is still problematic. This lesson changed how I evaluate code; now I think about performance as a core requirement, not an afterthought.</p>
+
+          <p>I made a significant design mistake when creating a database schema for one of our assignments. I didn't normalize the data properly, which seemed fine until I tried to update information and discovered anomalies. A single piece of information was stored in multiple places, so updating it in one location meant I had to update it everywhere else, which I inevitably missed. Dr. Bilal Ahmad's feedback on this was insightful: "Normalization isn't about following rules; it's about preventing yourself from making mistakes later." The mistake forced me to understand why normalization matters at a deeper level than any lecture could have taught.</p>
+
+          <p>I also made a mistake that's common among beginners: not testing edge cases. I wrote a function that validated user input, and it worked fine for normal inputs. But when I tested it with edge cases—empty strings, negative numbers, extremely large numbers—it failed or behaved unexpectedly. Dr. Bilal Ahmad emphasized that robust code isn't code that works for the happy path; it's code that handles the unexpected. After this experience, I made edge case testing a habit. Every function I write now, I immediately think about what could go wrong.</p>
+
+          <p>A more subtle mistake was over-engineering a solution. In one Programming Fundamentals assignment, I built an elaborate system with multiple classes and complex inheritance hierarchies when a simple procedural approach would have been cleaner and more maintainable. My code worked, but it was unnecessarily complicated. When Dr. Bilal Ahmad reviewed it, he didn't say it was wrong; he said it was over-engineered. He explained that in professional settings, simpler is usually better because it's easier for others to understand and maintain. This taught me to think about code from a teamwork perspective, not just from a "does it work" perspective.</p>
+
+          <p>I also made mistakes in how I approached debugging. Initially, when code didn't work, I'd add random print statements everywhere and guess at what was wrong. Dr. Bilal Ahmad taught us to debug systematically: form a hypothesis about what's wrong, test that hypothesis, gather data from the test, and refine your hypothesis. This scientific approach to debugging is far more efficient than random guessing. It's a mistake to debug without a method, and learning to debug properly has made me exponentially more productive.</p>
+
+          <p>One of the most valuable mistakes was submitting code without understanding it. Early in the semester, I copied code from examples and modified it slightly without fully comprehending how it worked. When Dr. Bilal Ahmad asked me to explain the code during office hours, I couldn't. He didn't scold me; instead, he walked me through the code line by line. That experience taught me that understanding is more important than speed. Now, I never submit code I don't fully understand.</p>
+
+          <p>I also made mistakes in my approach to learning. I thought reading the textbook and attending lectures was enough. I didn't practice enough; I didn't experiment with code; I didn't try to break things and fix them. The mistakes I made due to insufficient practice taught me that programming is a skill, not just knowledge. You can't learn to code by reading about it; you have to write code, make mistakes, and fix them.</p>
+
+          <p>Perhaps my biggest mistake was procrastinating on understanding foundational concepts. I glossed over some early programming concepts, assuming I'd understand them better when I needed them. Later, when I encountered more complex problems that built on those foundations, I struggled because my foundation was weak. Dr. Bilal Ahmad often said, "Every concept builds on previous concepts." Ignoring early concepts meant struggling with later ones. Now, I invest time in thoroughly understanding foundational material.</p>
+
+          <p>What Dr. Bilal Ahmad taught me through his responses to my mistakes was that failure is data, not judgment. When code didn't work, it wasn't a reflection on my intelligence or potential; it was information that my approach was wrong. This perspective shift removed shame from mistakes and replaced it with curiosity. Instead of "I failed," it became "What does this failure tell me?"</p>
+
+          <p>I also learned that different mistakes require different responses. A typo requires careful reading. A logic error requires rethinking your approach. A design flaw requires refactoring. A performance issue requires profiling and optimization. A conceptual misunderstanding requires going back to basics. Dr. Bilal Ahmad helped us develop the diagnostic skills to identify what type of mistake we'd made and respond appropriately.</p>
+
+          <p>Looking back at all the mistakes I made this semester, I'm grateful for them. Each one taught me something I couldn't have learned through lectures or reading. The mistakes that were most painful—the ones that took hours to debug, the ones that required significant refactoring—those taught me the most. I now understand that a semester without mistakes would have been a wasted semester.</p>
+
+          <p>For students currently learning programming or databases, I want to encourage you to make mistakes. Not recklessly, but deliberately. Write code, let it fail, debug it, and learn from the failure. Ask yourself why the mistake happened. Was it a typo? A logic error? A misunderstanding of a concept? A poor design choice? Understanding the type of mistake helps you prevent similar mistakes in the future.</p>
+
+          <p>Dr. Bilal Ahmad's approach to teaching emphasized that the goal isn't perfection; it's growth. Every mistake is an opportunity for growth if you're willing to learn from it. This mindset has made me a better programmer and will serve me well throughout my engineering career.</p>
+
+          <p>If you want to learn more about Dr. Bilal Ahmad's approach to education and learning through experience, you can connect with him on his professional profiles:
+            <br /><br />
+            <a href="https://www.linkedin.com/in/drbilalphd/" target="_blank" rel="noopener noreferrer"><strong>LinkedIn: Dr. Bilal Ahmad</strong></a>
+            <br />
+            <a href="https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><strong>Google Scholar</strong></a>
+          </p>
+
+          <div class="hashtags" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd;">
+            <p><strong>Tags:</strong> #MLwithDrBilalAhmad #DrBilalAhmad #LearningFromMistakes #Programming #Debugging #Growth #UETLahore</p>
+          </div>
+
+        </div>
+
+        <div class="post-footer">
+          <a href="index.html" class="btn btn-secondary">← Back to Home</a>
+        </div>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2026 Umme Hani's Blog</p>
+      <div class="social-links">
+        <a href="https://github.com/umehani17" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/drbilalphd/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
